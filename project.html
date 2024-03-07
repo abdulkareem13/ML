@@ -1,0 +1,109 @@
+<html>
+        <center>
+        <h1 style="color:red";">Customer classification churn </h1>
+        <form method=POST>
+            {% csrf_token %}
+            <table>
+               
+                <tr>
+                    <td>
+                        CustomerId
+                    </td>
+                    <td>
+                        <input type="text" name="textCustomerId">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        CreditScore
+                    </td>
+                    <td>
+                        <input type="text" name="textCreditScore">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Geography
+                    </td>
+                    <td>
+                        <input type="text" name="textGeography">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Gender
+                    </td>
+                    <td>
+                        <input typr="text" name="textGender">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Age
+                    </td>
+                    <td>
+                        <input type="text" name="textAge">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Tenure
+                    </td>
+                    <td>
+                        <input type="text" name="textTenure">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Balance
+                    </td>
+                    <td>
+                        <input type="text" name="textBalance">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        NumOfProducts
+                    </td>
+                    <td>
+                        <input type="text" name="textNumOfProducts">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        HasCrCard
+                    </td>
+                    <td>
+                        <input type="text" name="textHasCrCard">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        IsActiveMember
+                    </td>
+                    <td>
+                        <input type="text" name="textIsActiveMember">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        EstimatedSalary
+                    </td>
+                    <td>
+                        <input type="text" name="textEstimatedSalary">
+                    </td>
+                </tr>
+                <tr>
+                <td>
+                    <button type="SUBMIT" class="btn btn-primary" name="buttonpredict" ><h2>  Predict  </h2></button>
+                </td>
+                  </tr>
+                  <tr>
+                    <td>
+                        {{result}}
+                    </td>
+                  </tr>
+            </table>
+        </form> 
+    </center>
+</htmL>
